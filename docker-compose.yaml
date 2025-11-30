@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: .devcontainer/Dockerfile
+      dockerfile: .devcontainer/dev.Dockerfile
     volumes:
       - .:/app:Z
     command: sleep infinity
