@@ -1,0 +1,143 @@
+{
+  "$schema_generated_from": "get_instruments",
+  "$generated_at": "2025-06-15T16:28:13Z",
+  "schema": {
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+      "usOut": {
+        "type": "integer"
+      },
+      "usIn": {
+        "type": "integer"
+      },
+      "usDiff": {
+        "type": "integer"
+      },
+      "testnet": {
+        "type": "boolean"
+      },
+      "result": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tick_size_steps": {
+              "type": "array"
+            },
+            "tick_size": {
+              "type": "number"
+            },
+            "taker_commission": {
+              "type": "number"
+            },
+            "settlement_period": {
+              "type": "string"
+            },
+            "settlement_currency": {
+              "type": "string"
+            },
+            "rfq": {
+              "type": "boolean"
+            },
+            "quote_currency": {
+              "type": "string"
+            },
+            "price_index": {
+              "type": "string"
+            },
+            "min_trade_amount": {
+              "type": "number"
+            },
+            "max_liquidation_commission": {
+              "type": "number"
+            },
+            "max_leverage": {
+              "type": "integer"
+            },
+            "maker_commission": {
+              "type": "number"
+            },
+            "kind": {
+              "type": "string"
+            },
+            "is_active": {
+              "type": "boolean"
+            },
+            "instrument_name": {
+              "type": "string"
+            },
+            "instrument_id": {
+              "type": "integer"
+            },
+            "future_type": {
+              "type": "string"
+            },
+            "expiration_timestamp": {
+              "type": "integer"
+            },
+            "creation_timestamp": {
+              "type": "integer"
+            },
+            "counter_currency": {
+              "type": "string"
+            },
+            "contract_size": {
+              "type": "number"
+            },
+            "block_trade_tick_size": {
+              "type": "number"
+            },
+            "block_trade_min_trade_amount": {
+              "type": "integer"
+            },
+            "block_trade_commission": {
+              "type": "number"
+            },
+            "base_currency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "base_currency",
+            "block_trade_commission",
+            "block_trade_min_trade_amount",
+            "block_trade_tick_size",
+            "contract_size",
+            "counter_currency",
+            "creation_timestamp",
+            "expiration_timestamp",
+            "future_type",
+            "instrument_id",
+            "instrument_name",
+            "is_active",
+            "kind",
+            "maker_commission",
+            "max_leverage",
+            "max_liquidation_commission",
+            "min_trade_amount",
+            "price_index",
+            "quote_currency",
+            "rfq",
+            "settlement_currency",
+            "settlement_period",
+            "taker_commission",
+            "tick_size",
+            "tick_size_steps"
+          ]
+        }
+      },
+      "jsonrpc": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "jsonrpc",
+      "result",
+      "testnet",
+      "usDiff",
+      "usIn",
+      "usOut"
+    ]
+  }
+}

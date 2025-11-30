@@ -1,0 +1,105 @@
+{
+  "$schema_generated_from": "get_trades_by_sequence",
+  "$generated_at": "2025-06-15T16:28:13Z",
+  "schema": {
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+      "usOut": {
+        "type": "integer"
+      },
+      "usIn": {
+        "type": "integer"
+      },
+      "usDiff": {
+        "type": "integer"
+      },
+      "testnet": {
+        "type": "boolean"
+      },
+      "result": {
+        "type": "object",
+        "properties": {
+          "trades": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "trade_seq": {
+                  "type": "integer"
+                },
+                "trade_id": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "integer"
+                },
+                "tick_direction": {
+                  "type": "integer"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "mark_price": {
+                  "type": "number"
+                },
+                "instrument_name": {
+                  "type": "string"
+                },
+                "index_price": {
+                  "type": "number"
+                },
+                "direction": {
+                  "type": "string"
+                },
+                "contracts": {
+                  "type": "number"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "combo_trade_id": {
+                  "type": "string"
+                },
+                "combo_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "amount",
+                "contracts",
+                "direction",
+                "index_price",
+                "instrument_name",
+                "mark_price",
+                "price",
+                "tick_direction",
+                "timestamp",
+                "trade_id",
+                "trade_seq"
+              ]
+            }
+          },
+          "has_more": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "has_more",
+          "trades"
+        ]
+      },
+      "jsonrpc": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "jsonrpc",
+      "result",
+      "testnet",
+      "usDiff",
+      "usIn",
+      "usOut"
+    ]
+  }
+}
